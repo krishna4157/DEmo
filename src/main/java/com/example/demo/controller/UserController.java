@@ -1,5 +1,4 @@
 package com.example.demo.controller;
-
 import java.util.LinkedList;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.Entity.User;
 @RestController
 @RequestMapping("/user")
-public class UserController {
+public class UserController {       
 User us = new User("Krishna" , "male");
 //	@RequestMapping("/user")
 //	public User ex2() {
