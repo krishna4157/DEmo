@@ -1,10 +1,23 @@
 package com.example.demo.Entity;
+import java.lang.annotation.Native;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity
 public class User {
+	@Id
+	public long id;
 	public String name;
 	public String gender;
+	
 	public String getName() {
 		return name;
+	}
+	public long getId() {
+		return id;
+	}
+	public long setId(long id) {
+		return id;
 	}
 	public void setName(String name) {
 		this.name = name;
@@ -15,7 +28,7 @@ public class User {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public User(String name,String gender) {
+	public User(String name,String gender,long id) {
 		this.name = name;
 		this.gender = gender;
 	}
